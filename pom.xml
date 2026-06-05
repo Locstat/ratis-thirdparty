@@ -22,7 +22,7 @@
   </parent>
   <artifactId>ratis-thirdparty</artifactId>
   <groupId>org.apache.ratis</groupId>
-  <version>1.0.11</version>
+  <version>1.0.11.1</version>
   <name>Apache Ratis Thirdparty</name>
   <packaging>pom</packaging>
   <description>Thirdparty dependencies for Apache Ratis</description>
@@ -48,7 +48,7 @@
     <url>http://issues.apache.org/jira/browse/RATIS</url>
   </issueManagement>
   <properties>
-    <project.build.outputTimestamp>2026-02-08T19:21:59Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-06-05T11:54:42Z</project.build.outputTimestamp>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- Maven plugin versions -->
@@ -70,7 +70,7 @@
     <!--Version of grpc to be shaded -->
     <shaded.grpc.version>1.77.1</shaded.grpc.version>
     <!--Version of Netty to be shaded -->
-    <shaded.netty.version>4.1.130.Final</shaded.netty.version>
+    <shaded.netty.version>4.1.133.Final</shaded.netty.version>
     <!--Version of dropwizard to be shaded -->
     <shaded.dropwizard.version>4.2.21</shaded.dropwizard.version>
 
@@ -336,4 +336,18 @@
       </modules>
     </profile>
   </profiles>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/Locstat/ratis-thirdparty</url>
+    </repository>
+  </distributionManagement>
+  <repositories>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/Locstat/ratis-thirdparty</url>
+    </repository>
+  </repositories>
 </project>
